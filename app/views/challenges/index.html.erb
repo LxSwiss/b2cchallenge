@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Challenges</h1>
+<h1>Challenges</h1>
 
-<table>
+<table class="table table-bordered">
   <% @challenges.each do |challenge| %>
     <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
       <td><%= image_tag(challenge.image_url, class: 'list_image') %></td>
