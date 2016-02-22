@@ -9,8 +9,12 @@ Challenge.delete_all
 
 Challenge.create!(title: 'Do a 360 with a snowboard', description: %{
 Get 30% off if you do a 360 with a snowboard
-}, image_url: 'ruby.jpg')
+}, image_url: 'Old_Nike_logo.jpg')
 
 Challenge.create!(title: 'Free beer on Patricks day', description: %{
 If you wear green clothes you get a free beer on patricks day
-}, image_url: 'ruby.jpg')
+}, image_url: 'Old_Nike_logo.jpg')
+
+Challenge.create!(title: 'Free beer on Patricks day', description: %{
+If you wear green clothes you get a free beer on patricks day
+}, image_url: 'Old_Nike_logo.jpg')
