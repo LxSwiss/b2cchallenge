@@ -1,0 +1,2 @@
+module ChallengestoreHelper
+end
