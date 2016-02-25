@@ -5,6 +5,14 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+User.delete_all
+User.create!(name: 'alex', password: 'abc123', password_confirmation: 'abc123')
+
+
+
+
 Challenge.delete_all
 
 Challenge.create!(title: 'Mache einen 180 auf der Piste', description: %{
