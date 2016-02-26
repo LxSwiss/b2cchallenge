@@ -19,7 +19,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-  root 'challengestore#index', as: 'challangestore'
+  root 'challengestore#index', as: 'challengestore'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
