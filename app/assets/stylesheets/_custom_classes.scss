@@ -1,13 +1,10 @@
 .content_box{
-  z-index: 9;
-  left: 0px;
-  top: 0px;
-  background-image: linear-gradient(135deg, #A77C2A, #4C180F);
+  height: 300px;
 }
-
-.color_overlay{
-  z-index: 9;
-  left: 0px;
-  top: 0px;
-  background-image: linear-gradient(135deg, #A77C2A, #4C180F);
+.content_box_title{
+  height: 50px;
+  background-color: #e6e6e6;
+}
+.content_box_image{
+  height: 150px;
 }

@@ -5,8 +5,12 @@
   <div class="row small-up-1 medium-up-2 large-up-3">
     <% @challenges.each do |challenge| %>
         <div class="column">
-          <div class="content_box" style="background: url(/assets/<%= challenge.image_url %>)">
-            <h5 class="subheader"><%= challenge.title %></h5>
+          <div class="content_box">
+            <div class="content_box_image"  style="background: url(/assets/<%= challenge.image_url %>)">
+            </div>
+            <div class="content_box_title">
+              <h5 class="subheader"><%= challenge.title %></h5>
+            </div>
             <%= challenge.description %><br/>
             <%= link_to "Anschauen", challenge, :class => "button" %>
           </div>
@@ -14,20 +18,3 @@
     <% end %>
   </div>
 </div>
-
-<table class="table table-bordered">
-  <% @challenges.each do |challenge| %>
-    <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
-      <td><%= image_tag(challenge.image_url, class: 'list_image') %></td>
-        <td class="list_description">
-          <dl>
-            <dt><%= challenge.title %></dt>
-            <dd><%= truncate(strip_tags(challenge.description), length: 80) %></dd>
-          </dl>
-        </td>
-        <td class="list_actions">
-        <%= link_to 'Show', challenge %><br/>
-        </td>
-    </tr>
-  <% end %>
-</table>
