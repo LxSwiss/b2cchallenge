@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 
   resources :users
   get 'challengestore/index'
+  get 'challengestore/challenge_detail'
 
   resources :challenges
   # The priority is based upon order of creation: first created -> highest priority.
