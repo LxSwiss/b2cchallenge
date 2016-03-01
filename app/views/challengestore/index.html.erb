@@ -12,7 +12,7 @@
               <h5 class="subheader"><%= challenge.title %></h5>
             </div>
             <%= challenge.description %><br/>
-            <%= link_to "Anschauen",controller: "challengestore_controller", action: "show", id: @challenge, :class => "button" %>
+            <%= link_to "Anschauen", challengestore_challenge_detail_path(foo: challenge), :class => "button" %>
           </div>
         </div>
     <% end %>

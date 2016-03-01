@@ -8,6 +8,6 @@ class ChallengestoreController < ApplicationController
   # GET /challengestore/1
   # GET /challengesstore/1.json
   def challenge_detail
-    @challenge = Challenge.find(params[:id])
+    @challenge = Challenge.find(params[:foo])
   end
 end
