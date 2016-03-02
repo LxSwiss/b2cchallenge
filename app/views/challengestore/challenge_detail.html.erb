@@ -1,18 +1,11 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
 
-<p>
-  <strong>title:</strong>
-  <%= @challenge. title %>
-</p>
+  <h3>  <%= @challenge. title %>
+  </h3>
 
-<p>
-  <strong>Description:</strong>
+  <p>
   <%= @challenge.description %>
-</p>
+  </p>
 
-<p>
-  <strong>Image url:</strong>
-  <%= @challenge.image_url %>
-</p>
-
-<%= link_to 'Zurück', challengestore_path %>
+  <%= link_to 'Zurück', challengestore_path, :class => "button" %>
+</div>
