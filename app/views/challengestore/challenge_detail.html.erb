@@ -1,11 +1,33 @@
 <div class="row">
+  <div class="large-12 columns">
+  <h3>  <%= @challenge.title %></h3>
+  </div>
 
-  <h3>  <%= @challenge. title %>
-  </h3>
+  <div class="large-6 columns">
+    <%= image_tag(@challenge.image_url, :alt => "challenge image") %>
+    <h4>Die Challenge</h4>
+    <p>
+    <%= @challenge.description %>
+    </p>
+    <h4>Der Erlös</h4>
+    <p>
+    Bavaria ipsum dolor sit amet et oa i velit nois kasd Almrausch est. Stubn vulputate a liabs Deandl obandeln soluta vel dolore, cum nomoi? Dignissim di clita, imperdiet ipsum amet amet Gidarn resch. Gar nia need kloan sanctus Bradwurschtsemmal an et sed amet dignissim i hob di narrisch gean amet: Consetetur naa.
+    </p>
+    <h4>Das musst du beachten</h4>
+    <p>
+      Bavaria ipsum dolor sit amet aliquyam des muas ma hoid kenna ned, Kaiwe molestie Gschicht Gamsbart do hoam. Baamwach Sauwedda Kneedl, gubergren! Mim Radl foahn vo de qui at rebum, lorem! Magna es eum muass san aliquyam et spernzaln gwiss und sei:
 
-  <p>
-  <%= @challenge.description %>
-  </p>
+      I hob di liab wolpern consectetur großherzig Almrausch, dolore Sauakraud Weißwiaschd stet. Vel nonumy nisi invidunt und soluta, wia de soluta. Ea Spuiratz dolores, et diam consetetur fensdaln delenit a bissal wos gehd ollaweil. Elitr muass samma.
 
+      Damischa rebum hod consetetur illum midanand consequat! Auf’d Schellnsau suscipit ex Trachtnhuat Maßkruag, no! Consetetur no von Almrausch liber Schbozal. Oachkatzlschwoaf exercitation veniam eum oba veniam, sog i no Hetschapfah des is schee. Officia .
+    </p>
+  </div>
+  <div class="large-6 columns">
+    <h3> Challenge Einlösen!</h3>
+  </div>
+
+
+  <div class="large-12 columns">
   <%= link_to 'Zurück', challengestore_path, :class => "button" %>
+  </div>
 </div>
