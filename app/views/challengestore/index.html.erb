@@ -7,9 +7,9 @@
         <div class="column">
           <div class="content_box">
             <div class="content_box_image"  style="background: url(/assets/<%= challenge.image_url %>)">
-            </div>
-            <div class="content_box_title">
-              <h5 class="subheader"><%= challenge.title %></h5>
+              <div class="content_box_title_background">
+                <h5 class="content_box_title"><%= challenge.title %></h5>
+              </div>
             </div>
             <%= challenge.description %><br/>
             <%= link_to "Anschauen", challengestore_challenge_detail_path(foo: challenge), :class => "button" %>
