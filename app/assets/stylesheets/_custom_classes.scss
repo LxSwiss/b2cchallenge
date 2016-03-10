@@ -55,6 +55,13 @@ $global-radius: 4px;
   left: 0
 }
 
+.challenge-description{
+  color: #f2f2f2;
+  font-size: 0.8 em;
+  font-size: 14px;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
 
 
 // modifier classes
@@ -63,7 +70,6 @@ $global-radius: 4px;
   p {
     letter-spacing: 0.15em;
     color: #f4f4f4;
-    font-size: 28px;
     opacity: 0;
     transition: all 0.2s linear;
   }
@@ -142,7 +148,6 @@ $global-radius: 4px;
   .challenge-title {
     color: #f2f2f2;
     font-size: 1.2rem;
-    margin-top: 6rem;
     opacity: 1;
     transition: all 0.2s ease-in-out;
     background: rgba(0,0,0,0.7);
