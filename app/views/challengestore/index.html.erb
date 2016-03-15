@@ -6,26 +6,23 @@
 <div class="row">
   <div class="row small-up-1 medium-up-2 large-up-3">
     <% @challenges.each do |challenge| %>
-      <%= link_to(challengestore_challenge_detail_path(foo: challenge), :anchor => 'button') do %>
-        <div class="column">
-          <div class="image-wrapper overlay-fade-in">
-            <img src="/assets/<%= challenge.image_url %>" class="content_box_image"/>
+      <div class="column">
+        <div class="image-wrapper overlay-fade-in">
+          <img src="/assets/<%= challenge.image_url %>" class="content_box_image"/>
 
-            <div class="overlay-fade-out">
-              <h2 class="challenge-title"><%= challenge.title %></h2>
-              <p class="fade-out">blahblu</p>
+          <div class="overlay-fade-out">
+            <h2 class="challenge-title"><%= challenge.title %></h2>
 
-            </div>
-
-            <div class="image-overlay-content">
-
-              <p class="challenge-description"><%= challenge.description %></p>
-
-              <%= link_to "weitere infos", challengestore_challenge_detail_path(foo: challenge), :class => "button" %>
-
-            </div>
           </div>
-        <% end %>
+
+          <div class="image-overlay-content">
+
+            <p class="challenge-description"><%= challenge.description %></p>
+
+            <%= link_to "weitere infos", challengestore_challenge_detail_path(foo: challenge), :class => "button align-bottom" %>
+
+          </div>
+        </div>
       </div>
     <% end %>
   </div>
