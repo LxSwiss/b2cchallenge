@@ -12,7 +12,7 @@
             <img src="/assets/<%= challenge.image_url %>" class="content_box_image"/>
 
             <div class="overlay-fade-out">
-            <h2 class="challenge-title"><%= challenge.title %></h2>
+              <h2 class="challenge-title"><%= challenge.title %></h2>
               <p class="fade-out">blahblu</p>
 
             </div>
@@ -21,7 +21,7 @@
 
               <p class="challenge-description"><%= challenge.description %></p>
 
-              <a href="#" class="button">weitere infos</a>
+              <%= link_to "weitere infos", challengestore_challenge_detail_path(foo: challenge), :class => "button" %>
 
             </div>
           </div>
