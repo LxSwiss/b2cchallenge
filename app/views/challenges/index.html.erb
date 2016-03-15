@@ -1,28 +1,32 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Challenges</h1>
+<div class="row">
+  <h1>Challenges</h1>
+  <table class="table table-bordered">
+    <% @challenges.each do |challenge| %>
+      <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+        <td><%= image_tag(challenge.image_url, class: 'list_image') %></td>
+          <td class="list_description">
+            <dl>
+              <dt><%= challenge.title %></dt>
+              <dd><%= truncate(strip_tags(challenge.description), length: 80) %></dd>
+            </dl>
+          </td>
+          <td class="list_actions">
+          <%= link_to 'Show', challenge %><br/>
+          <%= link_to 'Edit', edit_challenge_path(challenge) %><br/>
+          <%= link_to 'Destroy', challenge, method: :delete,
+          data: { confirm: 'Are you sure?' } %>
+          </td>
+      </tr>
+    <% end %>
+  </table>
 
-<table class="table table-bordered">
-  <% @challenges.each do |challenge| %>
-    <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
-      <td><%= image_tag(challenge.image_url, class: 'list_image') %></td>
-        <td class="list_description">
-          <dl>
-            <dt><%= challenge.title %></dt>
-            <dd><%= truncate(strip_tags(challenge.description), length: 80) %></dd>
-          </dl>
-        </td>
-        <td class="list_actions">
-        <%= link_to 'Show', challenge %><br/>
-        <%= link_to 'Edit', edit_challenge_path(challenge) %><br/>
-        <%= link_to 'Destroy', challenge, method: :delete,
-        data: { confirm: 'Are you sure?' } %>
-        </td>
-    </tr>
-  <% end %>
-</table>
+<%= link_to 'Zur Adminseite', admin_path, :class => "button" %>
+<%= link_to 'Challenge hinzufügen', new_challenge_path, :class => "button"  %>
+</div>
 
 
 <br>
 
-<%= link_to 'New Challenge', new_challenge_path %>
+
