@@ -146,9 +146,11 @@ $global-radius: 4px;
   }
 
   .challenge-title {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
     color: #f2f2f2;
     font-size: 1.2rem;
-    align: bottom;
     opacity: 1;
     transition: all 0.2s ease-in-out;
     background: rgba(0,0,0,0.7);
